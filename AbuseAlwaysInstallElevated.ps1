@@ -1,3 +1,5 @@
+# User ID: bCkfoi6XeDNcWX4kjWc8yyGup9h1
+
 <# 
 To install a package with elevated (system) privileges, set the AlwaysInstallElevated value to "1" under both of the following registry keys:
 
