@@ -1,3 +1,13 @@
+<# 
+To install a package with elevated (system) privileges, set the AlwaysInstallElevated value to "1" under both of the following registry keys:
+
+HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Installer
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer
+
+If the AlwaysInstallElevated value is not set to "1" under both of the preceding registry keys, the installer uses elevated privileges to install managed 
+applications and uses the current user's privilege level for unmanaged applications.
+#>
+
 # Get-RegistryAlwaysInstallElevated
 # Returns $True if any of the AlwaysInstallElevated registry keys are set.
 
